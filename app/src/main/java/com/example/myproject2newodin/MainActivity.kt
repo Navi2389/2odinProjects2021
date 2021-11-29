@@ -1,4 +1,4 @@
-package com.example.myproject1newodin
+package com.example.myproject2newodin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
