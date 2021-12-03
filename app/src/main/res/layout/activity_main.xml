@@ -1,152 +1,212 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<?XMLversion="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--Делаем группу радио кнопок-->
+    <RadioGroup
+        android:id="@+id/rgGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--Далее кнопка радиобатон-->
+        <RadioButton
+            android:id="@+id/rbLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Left"></RadioButton>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="95dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginBottom="17dp"
-        android:text="Нажми меня"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <RadioButton
+            android:id="@+id/Center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center"></RadioButton>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="84dp"
-        android:layout_height="24dp"
-        android:text="Privet!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="103dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="221dp"
-        android:text="Нажми меня"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="202dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="253dp"
-        android:layout_marginBottom="58dp"
-        android:text="Ссылка"
-        android:textSize="55dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!--<LinearLayout
+        <RadioButton
+            android:id="@+id/Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"></RadioButton>
+    </RadioGroup>
+    <!--Делаем группу для кнопки очистки clear-->
+    <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
 
-        &lt;!&ndash;<TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#0000aa"
-            android:gravity="center_horizontal"
-            android:text="blue" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#aa0000"
-            android:gravity="center_horizontal"
-            android:text="red" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#00aa00"
-            android:gravity="center_horizontal"
-            android:text="green" />&ndash;&gt;
-        &lt;!&ndash;<TextView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="#00FF00"
-            android:text="Hello World"
-            android:textSize="25sp" />&ndash;&gt;
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="#00F"
-            android:textColor="#FFF"
-            android:textSize="35dp"
-            android:gravity="end|bottom"
-            android:text="gravity and|bottom"
-            />
-    </LinearLayout>-->
-
-    <ImageView
-        android:id="@+id/imageView"
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="560dp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+</EditText><!--Следующие кнопки Создать (Create) и Очистить (Clear)-->
+<Button
+android:id="@+id/btnCreate"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Create"</Button>
+<Button
+android:id="@+id/btnClear"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Clear"</Button></LinearLayout>< LinearLayout
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"</LinearLayout></LinearLayout>
 
-    <FrameLayout
-        android:layout_width="132dp"
-        android:layout_height="97dp"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="348dp">
-        <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World"
-            android:textSize="26sp" />
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="95dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginBottom="17dp"
+            android:text="Нажми меня"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginEnd="44dp"
+            android:text="Privet!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintHorizontal_bias="0.379"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="103dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="221dp"
+            android:text="Нажми меня"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="202dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="253dp"
+            android:layout_marginBottom="58dp"
+            android:text="Ссылка"
+            android:textSize="55dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        &lt;!&ndash;<LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">>
+            &lt;!&ndash;<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000aa"
+                android:gravity="center_horizontal"
+                android:text="blue" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#aa0000"
+                android:gravity="center_horizontal"
+                android:text="red" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00aa00"
+                android:gravity="center_horizontal"
+                android:text="green" />&ndash;&gt;
+            &lt;!&ndash;<TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#00FF00"
+                android:text="Hello World"
+                android:textSize="25sp" />&ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#00F"
+                android:textColor="#FFF"
+                android:textSize="35dp"
+                android:gravity="end|bottom"
+                android:text="gravity and|bottom"
+                />
+        </LinearLayout>&ndash;&gt;
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello Android"
-            android:textSize="26sp"
-            android:layout_marginTop="50dp"/>-->
-
-
-    </FrameLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="274dp"
-        android:layout_height="153dp"
-        app:srcCompat="@drawable/Tulips"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-
-    <!--<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android is the best"
-            android:textSize="30sp" />-->
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="560dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="277dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+            &lt;!&ndash;<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Android"
+                android:textSize="26sp"
+                android:layout_marginTop="50dp"/>&ndash;&gt;
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="274dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="179dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/Tulips" />
+        &lt;!&ndash;<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android is the best"
+                android:textSize="30sp" />&ndash;&gt;
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
