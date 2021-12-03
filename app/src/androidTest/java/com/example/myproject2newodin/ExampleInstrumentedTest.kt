@@ -1,4 +1,4 @@
-package com.example.myproject1newodin
+package com.example.myproject2newodin
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
