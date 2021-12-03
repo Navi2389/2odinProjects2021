@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Activity Two">
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="393dp"
+            android:text="Личная жизнь превращается в коды,
+В мыслях только РАБОТА, РАБОТА.
+If на досуге без сна и заботы
+Захочется вновь побыстрей на работу,
+Then вирус программщины вас захватил
+And нет бороться желанья и сил,
+And..."
+            android:textSize="30dp" />
+    </FrameLayout>
+</LinearLayout>
