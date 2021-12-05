@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             val openlink = Intent(Intent.ACTION_VIEW, address)
             startActivity(openlink)
             /*intent= Intent(this, SecondActivity::class.java)
-            startActivity(intent)******/
-        }
+            startActivity(intent)********/
+        }/******/
     }
 }
