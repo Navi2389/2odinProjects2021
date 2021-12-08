@@ -4,16 +4,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#35A12B"
-    tools:context=".MainActivity">
+    android:background="#020D11"
+    tools:context=".ThirdActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/flare" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="GREEN"
-        android:textColor="#000"
+        android:text="BLACK"
+        android:textColor="#F2F8FB"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -21,13 +27,10 @@
         android:id="@+id/jump"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="GO TO BLUE!"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ladybird" />
+        android:layout_centerInParent="true"
+        android:text="GO BACK TO GREEN!"
+        app:strokeColor="@color/white" />
+
 </RelativeLayout>
     <!---->

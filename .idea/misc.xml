@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21197916666666666" />
         <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21197916666666666" />
-        <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/layout/activity_second.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/MyProject1NewOdin/app/src/main/res/layout/activity_third.xml" value="0.28504273504273503" />
       </map>
     </option>
   </component>

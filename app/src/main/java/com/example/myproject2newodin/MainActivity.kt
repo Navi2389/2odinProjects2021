@@ -1,17 +1,23 @@
-package com.example.myproject2newodin
+package com.example.myproject1newodin
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-////////\\\\\\\\
+import android.widget.Button
+import com.example.myproject2newodin.R
+
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+        override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-
-}
-fun main() {
-    for (i in 'а'..'я'){
-        if (i.code % 2 == 0) print(i)
-    }
-}
+        val button:  Button=findViewById(R.id.jump)
+        button.setOnClickListener {
+        /*val address = Uri.parse("https://www.google.ru/")
+        val openlink = Intent(Intent.ACTION_VIEW, address)
+        startActivity(openlink)*/
+            intent= Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
+        }
+        }

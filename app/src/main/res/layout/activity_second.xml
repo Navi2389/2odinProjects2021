@@ -4,30 +4,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#35A12B"
-    tools:context=".MainActivity">
-
+    android:background="#1DB8FB"
+    tools:context=".SecondActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="GREEN"
+        android:text="BLUE"
         android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+
 
     <Button
         android:id="@+id/jump"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="GO TO BLUE!"/>
+        android:text="GO TO BLACK"/>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ladybird" />
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bubbles" />
+
 </RelativeLayout>
     <!---->
